@@ -16,9 +16,6 @@ body {
     overflow: hidden;
 }
 
-#contenido {
-    transition: height 0.3s ease; /* Agrega una transición suave para cambios de altura */
-}
 
 hr {
     height: 2px;
@@ -169,10 +166,13 @@ footer {
     background-color: rgb(182, 174, 162);
     text-align: center;
     color: black;
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    bottom: 0 !important;
     left: 0;
     width: 100%;
+}
+footer p{
+    margin-bottom: 0; /* Asegúrate de que no haya margen inferior */
 }
 
 @media only screen and (max-width: 768px) {

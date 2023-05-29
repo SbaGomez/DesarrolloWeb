@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function ajustarAlturaContenido() {
         var contenido = document.getElementById("contenido");
         contenido.style.height = "auto"; // Restablece la altura a "auto" para recalcularla correctamente
-        contenido.style.height = (contenido.scrollHeight + 210) + "px"; // Establece la altura según el contenido
+        contenido.style.height = (contenido.scrollHeight + 120) + "px"; // Establece la altura según el contenido
 
     }
 
