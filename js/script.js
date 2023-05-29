@@ -30,12 +30,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 var banner = document.getElementById("banner");
                 var texto = document.getElementById("banner").querySelector("p");
                 var titulo = document.getElementById("banner").querySelector("h1");
+                var newsletter = document.getElementById("newsletter");
 
                 if (url.includes("inicio.html")) {
                     banner.style.height = "400px";
                     banner.style.padding = "150px 40px";
                     texto.style.display = "block";
                     titulo.textContent = "Proporción áurea y fractales";
+                    newsletter.style.display = "block";
                     titulo.classList.remove("tituloBanner");
                     banner.style.backgroundImage = "url('../img/seccion.jpg')";
                     tituloPagina = "Diseño y Desarrollo Web - Home";
@@ -45,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     banner.style.padding = "70px 20px";
                     texto.style.display = "none"
                     titulo.textContent = "Diseño Web";
+                    newsletter.style.display = "none";
                     titulo.classList.add("tituloBanner");
                     banner.style.backgroundImage = "url('../img/header1.jpg')";
                     tituloPagina = "Diseño y Desarrollo Web - Somos";
@@ -55,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     texto.style.display = "none"
                     titulo.textContent = "Ideas";
                     titulo.classList.add("tituloBanner");
+                    newsletter.style.display = "none";
                     banner.style.backgroundImage = "url('../img/ideas3.jpg')";
                     tituloPagina = "Diseño y Desarrollo Web - Ideas";
                 }
@@ -64,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     texto.style.display = "none"
                     titulo.textContent = "Contacto";
                     titulo.classList.add("tituloBanner");
+                    newsletter.style.display = "none";
                     banner.style.backgroundImage = "url('../img/header1.jpg')";
                     tituloPagina = "Diseño y Desarrollo Web - Contacto";
                 }
@@ -102,8 +107,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Ajusta la altura del contenido según su contenido
     function ajustarAlturaContenido() {
         var contenido = document.getElementById("contenido");
-        contenido.style.height = "350px"; // Restablece la altura a "auto" para recalcularla correctamente
-        contenido.style.height = (contenido.scrollHeight + 120) + "px"; // Establece la altura según el contenido
+        contenido.style.height = "420px"; // Restablece la altura a "auto" para recalcularla correctamente
+        contenido.style.height = (contenido.scrollHeight + 100) + "px"; // Establece la altura según el contenido
     }
 
     cargarContenido("inicio.html");
