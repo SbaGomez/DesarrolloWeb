@@ -289,4 +289,25 @@ footer p {
         text-align: center;
         width: 100%;
     }
+
+    article#somos-columna {
+        float: none;
+        max-width: 100%;
+    }
+
+    aside#cuadrito {
+        float: none;
+        width: 100%;
+        margin-top: 25px;
+        padding: 10px;
+    }
+
+    .titulo {
+        margin-top: 50px;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
 }
