@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: rgb(236, 234, 231);
     position: relative;
     min-height: 100vh;
 }
@@ -93,7 +93,7 @@ header #logo h1 {
 
 /* newsletter */
 #newsletter {
-    background-color: #156799;
+    background-color: #31373b;
     color: aliceblue;
     min-width: 410px;
     min-height: 90px;
@@ -166,9 +166,9 @@ header #logo h1 {
 footer {
     height: 60px;
     line-height: 60px;
-    background-color: #E67072;
+    background-color: rgb(182, 174, 162);
     text-align: center;
-    color: aliceblue;
+    color: black;
     position: fixed;
     bottom: 0;
     left: 0;
