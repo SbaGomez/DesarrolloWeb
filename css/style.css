@@ -10,17 +10,29 @@ body {
     min-height: 100vh;
 }
 
-.contenedor{
+.contenedor {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
-
 hr {
     height: 2px;
     background-color: #E67072;
     margin: 20px 0;
+}
+
+.tituloBanner {
+    margin-top: 0;
+    line-height: 70px;
+    font-size: 100px;
+    font-weight: lighter;
+    color: rgba(194, 228, 255, 0.41);
+}
+
+.active {
+    color: #E67072 !important;
+    font-weight: 800;
 }
 
 /* Eliminar estilo de Links */
@@ -49,21 +61,24 @@ a:visited {
     text-decoration: none;
 }
 
-
 /* Cambios Navbar */
-
 header {
     color: #E67072;
     border-bottom: #E67072 3px solid;
 }
 
 header #logo h1 {
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 16pt;
-    height: 40px;
-    line-height: 40px;
+    font-weight: 400;
+    font-size: 22pt;
+    height: 70px;
+    line-height: 70px;
     margin-bottom: 0 !important;
+    margin-left: 100px;
+}
+
+.nombre {
+    font-weight: 800;
+    color: rgb(156, 147, 132);
 }
 
 .navbar-nav.ms-auto .nav-item {
@@ -79,13 +94,41 @@ header #logo h1 {
 /* vidriera */
 #vidriera {
     color: rgb(194, 228, 255);
-    min-height: 400px;
+    height: 400px;
     background-image: url(../img/seccion.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
     color: aliceblue;
     padding: 150px 40px;
+}
+
+/* Somos */
+
+article#somos-columna {
+    float: left;
+    max-width: 65%;
+}
+
+aside#cuadrito {
+    float: right;
+    width: 30%;
+    margin-top: 170px;
+    padding: 10px;
+}
+
+.titulo {
+    font-size: 30px;
+    color: #146F9E;
+    padding-bottom: 0;
+    margin-top: 125px;
+}
+
+.destacado {
+    background-color: #146F9E;
+    color: aliceblue;
+    padding: 15px;
+    margin-top: 0px;
 }
 
 /* newsletter */
@@ -108,12 +151,12 @@ header #logo h1 {
 }
 
 #newsletter input {
-    padding: 4px;
+    padding: 10px;
     height: 30px;
     width: 200px;
     margin-right: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 7px;
     background-color: #f0f0f0;
     font-size: 16px;
     color: #333;
@@ -131,27 +174,31 @@ header #logo h1 {
 }
 
 .btn_news:hover {
-    background-color: #E6E343;
-    color: #156799;
+    background-color: #e6a543;
+    color: black;
 }
 
 /* Boxes */
-#boxes{
+#boxes {
     margin-top: 20px;
 }
-#boxes .box{
+
+#boxes .box {
     float: left;
     text-align: center;
     width: 30%;
     padding: 10px;
 }
-#boxes .box img{
+
+#boxes .box img {
     width: 120PX
 }
-#boxes p{
+
+#boxes p {
     font-size: 13px;
     padding: 0 20px;
 }
+
 #boxes h2 {
     font-size: 18px;
     margin-bottom: 0px;
@@ -171,14 +218,26 @@ footer {
     left: 0;
     width: 100%;
 }
-footer p{
-    margin-bottom: 0; /* Asegúrate de que no haya margen inferior */
+
+footer p {
+    margin-bottom: 0;
+    /* Asegúrate de que no haya margen inferior */
 }
 
 @media only screen and (max-width: 768px) {
 
     header #logo h1 {
-        font-size: 13pt;
+        margin-left: 0 !important;
+        font-size: 20pt;
+    }
+
+    .nombre {
+        font-size: 20pt;
+    }
+
+    .tituloBanner {
+        line-height: 40px;
+        font-size: 50px;
     }
 
     #newsletter h3 {
@@ -205,7 +264,7 @@ footer p{
     }
 
     #boxes .box,
-    #boxes h2{
+    #boxes h2 {
         float: none;
         text-align: center;
         width: 100%;
