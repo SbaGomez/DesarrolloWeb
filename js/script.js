@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     titulo.textContent = "Proporción áurea y fractales";
                     titulo.classList.remove("tituloBanner");
                     banner.style.backgroundImage = "url('../img/seccion.jpg')";
-                    tituloPagina = "Diseño y Desarrollo Web";
+                    tituloPagina = "Diseño y Desarrollo Web - Home";
                 }
                 else if (esSomos) {
                     banner.style.height = "200px";
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     titulo.textContent = "Diseño Web";
                     titulo.classList.add("tituloBanner");
                     banner.style.backgroundImage = "url('../img/header1.jpg')";
-                    tituloPagina = "Somos";
+                    tituloPagina = "Diseño y Desarrollo Web - Somos";
                 }
                 else if (esIdeas) {
                     banner.style.height = "200px";
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     titulo.textContent = "Ideas";
                     titulo.classList.add("tituloBanner");
                     banner.style.backgroundImage = "url('../img/ideas3.jpg')";
-                    tituloPagina = "Ideas";
+                    tituloPagina = "Diseño y Desarrollo Web - Ideas";
                 }
                 else if (esContacto) {
                     banner.style.height = "200px";
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     titulo.textContent = "Contacto";
                     titulo.classList.add("tituloBanner");
                     banner.style.backgroundImage = "url('../img/header1.jpg')";
-                    tituloPagina = "Contacto";
+                    tituloPagina = "Diseño y Desarrollo Web - Contacto";
                 }
 
                 // Le asigna el titulo de la pagina que corresponda
