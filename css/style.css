@@ -183,18 +183,21 @@ aside#cuadrito {
 /* Boxes */
 #boxes {
     margin-top: 40px;
+    width: 100%;
 }
 
 #boxes .box {
     float: left;
     text-align: center;
     width: 30%;
-    padding: 10px;
+    padding: 15px;
+    margin-left: 35px;
 }
 
 #boxes .box img {
     width: 150PX;
     padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 #boxes p {
@@ -231,7 +234,17 @@ footer p {
     /* Asegúrate de que no haya margen inferior */
 }
 
+@media only screen and (max-width: 1310px) {
+    #boxes .box {
+        margin-left: 0;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+
+    #boxes .box {
+        margin-left: 0;
+    }
 
     header #logo h1 {
         margin-left: 0 !important;
