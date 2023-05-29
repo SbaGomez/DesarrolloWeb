@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("contenido").innerHTML = this.responseText;
                 ajustarAlturaContenido(); // Ajusta la altura del contenido después de cargar el nuevo contenido
 
+                // Variable para titulo de la pagina
+                var tituloPagina = "";
+
                 // Verificar la URL actual
                 var esInicio = url.includes("inicio.html");
                 var esSomos = url.includes("somos.html");
@@ -30,29 +33,54 @@ document.addEventListener("DOMContentLoaded", function () {
                 var esContacto = url.includes("contacto.html");
 
                 // Cambiar la clase y estilos del banner segun la URL
-                var vidriera = document.getElementById("vidriera");
-                var texto = document.getElementById("vidriera").querySelector("p");
+                var banner = document.getElementById("banner");
+                var texto = document.getElementById("banner").querySelector("p");
                 var newsletter = document.getElementById("newsletter");
-                var titulo = document.getElementById("vidriera").querySelector("h1");
+                var titulo = document.getElementById("banner").querySelector("h1");
 
                 if (esInicio) {
-                    vidriera.style.height = "400px";
-                    vidriera.style.padding = "150px 40px";
+                    banner.style.height = "400px";
+                    banner.style.padding = "150px 40px";
                     texto.style.display = "block";
                     //newsletter.style.display = "block";
                     titulo.textContent = "Proporción áurea y fractales";
                     titulo.classList.remove("tituloBanner");
-                    vidriera.style.backgroundImage = "url('../img/seccion.jpg')";
+                    banner.style.backgroundImage = "url('../img/seccion.jpg')";
+                    tituloPagina = "Diseño y Desarrollo Web";
                 }
                 else if (esSomos) {
-                    vidriera.style.height = "200px";
-                    vidriera.style.padding = "70px 20px";
+                    banner.style.height = "200px";
+                    banner.style.padding = "70px 20px";
                     texto.style.display = "none"
                     //newsletter.style.display = "none";
                     titulo.textContent = "Diseño Web";
                     titulo.classList.add("tituloBanner");
-                    vidriera.style.backgroundImage = "url('../img/header1.jpg')";
+                    banner.style.backgroundImage = "url('../img/header1.jpg')";
+                    tituloPagina = "Somos";
                 }
+                else if (esIdeas) {
+                    banner.style.height = "200px";
+                    banner.style.padding = "70px 20px";
+                    texto.style.display = "none"
+                    //newsletter.style.display = "none";
+                    titulo.textContent = "Ideas";
+                    titulo.classList.add("tituloBanner");
+                    banner.style.backgroundImage = "url('../img/ideas3.jpg')";
+                    tituloPagina = "Ideas";
+                }
+                else if (esContacto) {
+                    banner.style.height = "200px";
+                    banner.style.padding = "70px 20px";
+                    texto.style.display = "none"
+                    //newsletter.style.display = "none";
+                    titulo.textContent = "Contacto";
+                    titulo.classList.add("tituloBanner");
+                    banner.style.backgroundImage = "url('../img/header1.jpg')";
+                    tituloPagina = "Contacto";
+                }
+
+                // Le asigna el titulo de la pagina que corresponda
+                document.title = tituloPagina;
 
                 // Obtener los elementos de navegación
                 var inicio = document.getElementById("inicio");
