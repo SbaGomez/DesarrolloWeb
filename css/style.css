@@ -182,7 +182,7 @@ aside#cuadrito {
 
 /* Boxes */
 #boxes {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 #boxes .box {
@@ -193,19 +193,24 @@ aside#cuadrito {
 }
 
 #boxes .box img {
-    width: 120PX
+    width: 150PX;
+    padding-bottom: 40px;
 }
 
 #boxes p {
-    font-size: 13px;
-    padding: 0 20px;
+    font-size: 15px;
+    padding: 0 40px;
 }
 
 #boxes h2 {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 0px;
     text-align: left;
     color: #146F9E;
+}
+
+#boxes h3 {
+    padding-bottom: 20px;
 }
 
 /* Footer */
