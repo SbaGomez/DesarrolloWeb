@@ -6,43 +6,27 @@
 
 body {
     background-color: bisque;
+    position: relative;
+    min-height: 100vh;
 }
 
-header {
-    color: #E67072;
-    border-bottom: #E67072 3px solid;
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-header #logo h1 {
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 16pt;
-    height: 40px;
-    line-height: 40px;
-    margin-bottom: 0 !important;
+#contenido {
+    transition: height 0.3s ease; /* Agrega una transición suave para cambios de altura */
 }
 
-.navbar-nav.ms-auto .nav-item {
-    margin-right: 40px;
-    font-size: 12pt;
-    text-transform: uppercase;
+hr {
+    height: 2px;
+    background-color: #E67072;
+    margin: 20px 0;
 }
 
-.navbar-nav.ms-auto  {
-padding-right: 150px;
-}
-
-#vidriera {
-    color: rgb(194, 228, 255);
-    min-height: 400px;
-    background-image: url(../img/seccion.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: aliceblue;
-    padding: 150px 40px;
-}
-
+/* Eliminar estilo de Links */
 a {
     color: none;
     text-decoration: none;
@@ -66,4 +50,164 @@ a:active {
 a:visited {
     color: none;
     text-decoration: none;
+}
+
+
+/* Cambios Navbar */
+
+header {
+    color: #E67072;
+    border-bottom: #E67072 3px solid;
+}
+
+header #logo h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16pt;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 0 !important;
+}
+
+.navbar-nav.ms-auto .nav-item {
+    margin-right: 40px;
+    font-size: 12pt;
+    text-transform: uppercase;
+}
+
+.navbar-nav.ms-auto {
+    padding-right: 150px;
+}
+
+/* vidriera */
+#vidriera {
+    color: rgb(194, 228, 255);
+    min-height: 400px;
+    background-image: url(../img/seccion.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: aliceblue;
+    padding: 150px 40px;
+}
+
+/* newsletter */
+#newsletter {
+    background-color: #156799;
+    color: aliceblue;
+    min-width: 410px;
+    min-height: 90px;
+    padding: 20px;
+}
+
+#newsletter h3 {
+    float: left;
+    margin-top: 5px;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 8px;
+}
+
+#newsletter input {
+    padding: 4px;
+    height: 30px;
+    width: 200px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn_news {
+    height: 32px;
+    background-color: #E67072;
+    border: none;
+    padding: 0 20px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.btn_news:hover {
+    background-color: #E6E343;
+    color: #156799;
+}
+
+/* Boxes */
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+#boxes .box img{
+    width: 120PX
+}
+#boxes p{
+    font-size: 13px;
+    padding: 0 20px;
+}
+#boxes h2 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    text-align: left;
+    color: #146F9E;
+}
+
+/* Footer */
+footer {
+    height: 60px;
+    line-height: 60px;
+    background-color: #E67072;
+    text-align: center;
+    color: aliceblue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header #logo h1 {
+        font-size: 13pt;
+    }
+
+    #newsletter h3 {
+        float: none;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #newsletter form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #newsletter input {
+        width: 90%;
+        margin: 7px 0;
+    }
+
+    #newsletter .btn_news {
+        width: 95%;
+
+    }
+
+    #boxes .box,
+    #boxes h2{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
 }

@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault(); // Evita el comportamiento predeterminado del enlace
 
             // Obtiene la URL del enlace
-            var url = this.getAttribute("id")+".html";
+            var url = this.getAttribute("id") + ".html";
             // Carga el contenido de la URL en el contenedor
-            cargarContenido(url); // Carga el contenido de la URL en el contenedor
+            cargarContenido(url);
         });
     });
 
@@ -21,11 +21,23 @@ document.addEventListener("DOMContentLoaded", function() {
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("contenido").innerHTML = this.responseText;
+                ajustarAlturaContenido(); // Ajusta la altura del contenido después de cargar el nuevo contenido
             }
         };
         xhttp.open("GET", url, true);
         xhttp.send();
     }
 
+    // Ajusta la altura del contenido según su contenido
+    function ajustarAlturaContenido() {
+        var contenido = document.getElementById("contenido");
+        contenido.style.height = "auto"; // Restablece la altura a "auto" para recalcularla correctamente
+        contenido.style.height = (contenido.scrollHeight + 210) + "px"; // Establece la altura según el contenido
+
+    }
+
     cargarContenido("inicio.html");
+
+    window.addEventListener("resize", ajustarAlturaContenido);
 });
+
