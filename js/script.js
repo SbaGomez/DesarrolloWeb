@@ -111,8 +111,10 @@ document.addEventListener("DOMContentLoaded", function () {
         contenido.style.height = (contenido.scrollHeight + 100) + "px"; // Establece la altura según el contenido
     }
 
+    window.addEventListener("resize", ajustarAlturaContenido);
+    
+    //Carga como default el inicio.html
     cargarContenido("inicio.html");
 
-    window.addEventListener("resize", ajustarAlturaContenido);
 });
 
