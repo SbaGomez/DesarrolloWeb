@@ -1,77 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-body{
+body {
     background-color: bisque;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-}
-
-header{
-    background-color:beige;
-    color:#E67072;
-    border-bottom: #E67072 3px solid;
-    min-height: 70px;
-    line-height: 66px;
-}
-
-header #logo{
-    float: left;
-}
-
-header nav{
-    float: right;
-}
-
-header li{
-    display: inline;
-    float: left;
-    margin-right: 30px;
-    padding: 0 10px;
-}
-
-header li:hover{
-    background-color: aliceblue;
+header {
+    color: #E67072;
     border-bottom: #E67072 3px solid;
 }
 
-header a{
-    color: black;
-    font-size: 15pt;
+header #logo h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16pt;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 0 !important;
+}
+
+.navbar-nav.ms-auto .nav-item {
+    margin-right: 40px;
+    font-size: 12pt;
     text-transform: uppercase;
 }
 
-header a:hover{
-    color: #E67072;
+.navbar-nav.ms-auto  {
+padding-right: 150px;
 }
 
-a{
+#vidriera {
+    color: rgb(194, 228, 255);
+    min-height: 400px;
+    background-image: url(../img/seccion.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: aliceblue;
+    padding: 150px 40px;
+}
+
+a {
     color: none;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: none;
     text-decoration: none;
 }
 
-a:link{
+a:link {
     color: none;
     text-decoration: none;
 }
 
-a:active{
+a:active {
     color: none;
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: none;
     text-decoration: none;
 }
