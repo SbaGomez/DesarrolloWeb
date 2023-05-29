@@ -33,24 +33,24 @@ document.addEventListener("DOMContentLoaded", function () {
                 var newsletter = document.getElementById("newsletter");
 
                 if (url.includes("inicio.html")) {
-                    banner.style.height = "400px";
-                    banner.style.padding = "150px 40px";
-                    texto.style.display = "block";
-                    titulo.textContent = "Proporción áurea y fractales";
-                    newsletter.style.display = "block";
-                    titulo.classList.remove("tituloBanner");
-                    banner.style.backgroundImage = "url('../img/seccion.jpg')";
-                    tituloPagina = "Diseño y Desarrollo Web - Home";
+                    banner.style.height = "400px";                                  //height del banner
+                    banner.style.padding = "150px 40px";                            //paddings del banner
+                    texto.style.display = "block";                                  //Mostrar el p del banner en el index.html
+                    titulo.textContent = "Proporción áurea y fractales";            //Cambiar titulo del banner
+                    newsletter.style.display = "block";                             //Mostrar el newsletter en el index.html
+                    titulo.classList.remove("tituloBanner");                        //Remover estilo del titulo del banner en el index.html
+                    banner.style.backgroundImage = "url('../img/seccion.jpg')";     //Imagen del banner de index.html
+                    tituloPagina = "Diseño y Desarrollo Web - Home";                //Cambiar titulo de la pagina
                 }
                 else if (url.includes("somos.html")) {
-                    banner.style.height = "200px";
-                    banner.style.padding = "70px 20px";
-                    texto.style.display = "none"
-                    titulo.textContent = "Diseño Web";
-                    newsletter.style.display = "none";
-                    titulo.classList.add("tituloBanner");
-                    banner.style.backgroundImage = "url('../img/header1.jpg')";
-                    tituloPagina = "Diseño y Desarrollo Web - Somos";
+                    banner.style.height = "200px";                                  //height del banner
+                    banner.style.padding = "70px 20px";                             //paddings del banner
+                    texto.style.display = "none"                                    //Esconder el p del banner en el somos.html
+                    titulo.textContent = "Diseño Web";                              //Cambiar titulo del banner
+                    newsletter.style.display = "none";                              //Escoder el newsletter en el somos.html
+                    titulo.classList.add("tituloBanner");                           //Agregarle el estilo del titulo del banner en el somos.html
+                    banner.style.backgroundImage = "url('../img/header1.jpg')";     //Imagen del banner de index.html
+                    tituloPagina = "Diseño y Desarrollo Web - Somos";               //Cambiar titulo de la pagina
                 }
                 else if (url.includes("ideas.html")) {
                     banner.style.height = "200px";
