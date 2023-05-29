@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: bisque;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    background-color:beige;
+    color:#E67072;
+    border-bottom: #E67072 3px solid;
+    min-height: 70px;
+    line-height: 66px;
+}
+
+header #logo{
+    float: left;
+}
+
+header nav{
+    float: right;
+}
+
+header li{
+    display: inline;
+    float: left;
+    margin-right: 30px;
+    padding: 0 10px;
+}
+
+header li:hover{
+    background-color: aliceblue;
+    border-bottom: #E67072 3px solid;
+}
+
+header a{
+    color: black;
+    font-size: 15pt;
+    text-transform: uppercase;
+}
+
+header a:hover{
+    color: #E67072;
+}
+
+a{
+    color: none;
+    text-decoration: none;
+}
+
+a:hover{
+    color: none;
+    text-decoration: none;
+}
+
+a:link{
+    color: none;
+    text-decoration: none;
+}
+
+a:active{
+    color: none;
+    text-decoration: none;
+}
+
+a:visited{
+    color: none;
+    text-decoration: none;
+}
