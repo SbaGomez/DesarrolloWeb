@@ -3,6 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obtiene los enlaces del menú de navegación
     var enlaces = document.querySelectorAll("nav ul li a");
 
+    //Como se usa la funcion scrollToTop
+    var botonScrollArriba = document.getElementById("botonScrollArriba");
+    botonScrollArriba.addEventListener("click", scrollToTop);
+
+    // Verificar la posición de desplazamiento al cargar la página
+    verificarPosicionDesplazamiento();
+
+    // Verificar la posición de desplazamiento al desplazar la página
+    window.addEventListener("scroll", verificarPosicionDesplazamiento);
+
     // Itera sobre cada enlace y agrega un evento de clic
     enlaces.forEach(function (enlace) {
         enlace.addEventListener("click", function (e) {
@@ -14,6 +24,26 @@ document.addEventListener("DOMContentLoaded", function () {
             cargarContenido(url);
         });
     });
+
+
+    // Función para desplazarse hacia arriba en la página
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    // Verificar la posición de desplazamiento al desplazar o cargar la página
+    function verificarPosicionDesplazamiento() {
+        var botonScrollArriba = document.getElementById("botonScrollArriba");
+
+        if (window.pageYOffset > 0) {
+            botonScrollArriba.style.display = "block"; // Mostrar el botón
+        } else {
+            botonScrollArriba.style.display = "none"; // Ocultar el botón
+        }
+    }
 
     // Función para cargar el contenido de una URL en el contenedor
     function cargarContenido(url) {
@@ -112,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener("resize", ajustarAlturaContenido);
-    
+
     //Carga como default el inicio.html
     cargarContenido("inicio.html");
 

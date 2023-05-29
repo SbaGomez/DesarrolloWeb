@@ -37,6 +37,12 @@ hr {
     font-weight: 800;
 }
 
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
 /* Eliminar estilo de Links */
 a {
     color: none;
