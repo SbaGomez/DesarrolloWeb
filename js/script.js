@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     banner.style.padding = "70px 20px";                             //paddings del banner
                     texto.style.display = "none"                                    //Esconder el p del banner en el somos.html
                     titulo.textContent = "Diseño Web";                              //Cambiar titulo del banner
-                    newsletter.style.display = "none";                              //Escoder el newsletter en el somos.html
+                    newsletter.style.display = "block";                              //Escoder el newsletter en el somos.html
                     titulo.classList.add("tituloBanner");                           //Agregarle el estilo del titulo del banner en el somos.html
                     banner.style.backgroundImage = "url('../img/header1.jpg')";     //Imagen del banner de index.html
                     tituloPagina = "Diseño y Desarrollo Web - Somos";               //Cambiar titulo de la pagina
