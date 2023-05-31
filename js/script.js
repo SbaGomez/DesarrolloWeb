@@ -1,10 +1,10 @@
 // Espera a que el DOM se cargue completamente
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     // Obtiene los enlaces del menú de navegación
-    var enlaces = document.querySelectorAll("nav ul li a");
+    const enlaces = document.querySelectorAll("nav ul li a");
 
     //Como se usa la funcion scrollToTop
-    var botonScrollArriba = document.getElementById("botonScrollArriba");
+    const botonScrollArriba = document.getElementById("botonScrollArriba");
     botonScrollArriba.addEventListener("click", scrollToTop);
 
     // Verificar la posición de desplazamiento al cargar la página
@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
         enlace.addEventListener("click", function (e) {
             e.preventDefault(); // Evita el comportamiento predeterminado del enlace
 
+            // Funcion para desplazarse hacia la sección correspondiente            
+            const targetSectionId = enlace.getAttribute("href").substring(1);
+            scrollToSection(targetSectionId);
+
             // Obtiene la URL del enlace
             var url = this.getAttribute("id") + ".html";
             // Carga el contenido de la URL en el contenedor
@@ -25,6 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // Función para desplazarse suavemente hacia una sección
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: "smooth" });
+    }
 
     // Función para desplazarse hacia arriba en la página
     function scrollToTop() {
@@ -57,10 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 var tituloPagina = "";
 
                 // Cambiar la clase y estilos del banner segun la URL
-                var banner = document.getElementById("banner");
-                var texto = document.getElementById("banner").querySelector("p");
-                var titulo = document.getElementById("banner").querySelector("h1");
-                var newsletter = document.getElementById("newsletter");
+                const banner = document.getElementById("banner");
+                const texto = document.getElementById("banner").querySelector("p");
+                const titulo = document.getElementById("banner").querySelector("h1");
+                const newsletter = document.getElementById("newsletter");
 
                 if (url.includes("inicio.html")) {
                     banner.style.height = "400px";                                  //height del banner
