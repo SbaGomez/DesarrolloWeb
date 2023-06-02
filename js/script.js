@@ -77,7 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     texto.style.display = "block";                                  //Mostrar el p del banner en el index.html
                     titulo.textContent = "Proporción áurea y fractales";            //Cambiar titulo del banner
                     newsletter.style.display = "block";                             //Mostrar el newsletter en el index.html
-                    titulo.classList.remove("tituloBanner");                        //Remover estilo del titulo del banner en el index.html
+                    titulo.classList.add("tituloBannerHome");                       //Remover estilo del titulo del banner en el index.html
+                    titulo.classList.remove("tituloBanner");
                     banner.style.backgroundImage = "url('../img/seccion.jpg')";     //Imagen del banner de index.html
                     tituloPagina = "Diseño y Desarrollo Web - Home";                //Cambiar titulo de la pagina
                 }
@@ -86,8 +87,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     banner.style.padding = "70px 20px";                             //paddings del banner
                     texto.style.display = "none"                                    //Esconder el p del banner en el somos.html
                     titulo.textContent = "Diseño Web";                              //Cambiar titulo del banner
-                    newsletter.style.display = "block";                              //Escoder el newsletter en el somos.html
+                    newsletter.style.display = "block";                             //Escoder el newsletter en el somos.html
                     titulo.classList.add("tituloBanner");                           //Agregarle el estilo del titulo del banner en el somos.html
+                    titulo.classList.remove("tituloBannerHome");
                     banner.style.backgroundImage = "url('../img/header1.jpg')";     //Imagen del banner de index.html
                     tituloPagina = "Diseño y Desarrollo Web - Somos";               //Cambiar titulo de la pagina
                 }
@@ -97,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     texto.style.display = "none"
                     titulo.textContent = "Ideas";
                     titulo.classList.add("tituloBanner");
+                    titulo.classList.remove("tituloBannerHome");
                     newsletter.style.display = "block";
                     banner.style.backgroundImage = "url('../img/ideas3.jpg')";
                     tituloPagina = "Diseño y Desarrollo Web - Ideas";
@@ -107,6 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     texto.style.display = "none"
                     titulo.textContent = "Contacto";
                     titulo.classList.add("tituloBanner");
+                    titulo.classList.remove("tituloBannerHome");
                     newsletter.style.display = "block";
                     banner.style.backgroundImage = "url('../img/header1.jpg')";
                     tituloPagina = "Diseño y Desarrollo Web - Contacto";
