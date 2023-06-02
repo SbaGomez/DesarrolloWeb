@@ -87,6 +87,12 @@ header #logo h1 {
     color: rgb(156, 147, 132);
 }
 
+.nav-link i{
+    color: #e4bd82;
+    padding-right: 7px;
+    font-size: 20px;
+}
+
 .nav-link {
     color: white;
 }
@@ -123,7 +129,9 @@ header #logo h1 {
     background-position: center;
     text-align: center;
     color: aliceblue;
-    padding: 150px 40px;
+    line-height: 400px;
+    display: flex; /* Agregar una propiedad flex */
+    align-items: center; /* Centrar verticalmente */
 }
 
 .tituloBanner {
@@ -141,6 +149,7 @@ header #logo h1 {
 
 #banner p {
     font-size: 15pt;
+    line-height: 30px;
 }
 
 /* Contacto */

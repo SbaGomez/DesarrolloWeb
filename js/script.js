@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (url.includes("inicio.html")) {
                     banner.style.height = "400px";                                  //height del banner
-                    banner.style.padding = "150px 40px";                            //paddings del banner
+                    banner.style.lineHeight = "400px";                              //LineHeight del banner para que este centrado
                     texto.style.display = "block";                                  //Mostrar el p del banner en el index.html
                     titulo.textContent = "Proporción áurea y fractales";            //Cambiar titulo del banner
                     newsletter.style.display = "block";                             //Mostrar el newsletter en el index.html
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 else if (url.includes("somos.html")) {
                     banner.style.height = "200px";                                  //height del banner
-                    banner.style.padding = "70px 20px";                             //paddings del banner
+                    banner.style.lineHeight = "200px";                              //LineHeight del banner para que este centrado
                     texto.style.display = "none"                                    //Esconder el p del banner en el somos.html
                     titulo.textContent = "Diseño Web";                              //Cambiar titulo del banner
                     newsletter.style.display = "block";                             //Escoder el newsletter en el somos.html
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 else if (url.includes("ideas.html")) {
                     banner.style.height = "200px";
-                    banner.style.padding = "70px 20px";
+                    banner.style.lineHeight = "200px";
                     texto.style.display = "none"
                     titulo.textContent = "Ideas";
                     titulo.classList.add("tituloBanner");
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 else if (url.includes("contacto.html")) {
                     banner.style.height = "200px";
-                    banner.style.padding = "70px 20px";
+                    banner.style.lineHeight = "200px";
                     texto.style.display = "none"
                     titulo.textContent = "Contacto";
                     titulo.classList.add("tituloBanner");
