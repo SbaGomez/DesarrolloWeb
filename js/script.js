@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     texto.style.display = "none"
                     titulo.textContent = "Ideas";
                     titulo.classList.add("tituloBanner");
-                    newsletter.style.display = "none";
+                    newsletter.style.display = "block";
                     banner.style.backgroundImage = "url('../img/ideas3.jpg')";
                     tituloPagina = "Diseño y Desarrollo Web - Ideas";
                 }
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     texto.style.display = "none"
                     titulo.textContent = "Contacto";
                     titulo.classList.add("tituloBanner");
-                    newsletter.style.display = "none";
+                    newsletter.style.display = "block";
                     banner.style.backgroundImage = "url('../img/header1.jpg')";
                     tituloPagina = "Diseño y Desarrollo Web - Contacto";
                 }

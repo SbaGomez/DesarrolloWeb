@@ -20,7 +20,9 @@ body {
 
 hr {
     height: 2px;
-    background-color: #E67072;
+    background-color: #d3831a;
+    border: none;
+    border-top: 1px solid #704711;
     margin: 20px 0;
 }
 
@@ -42,6 +44,37 @@ hr {
     bottom: 20px;
     right: 20px;
 }
+
+/* Contacto */
+article#contacto-columna {
+    float: left;
+    max-width: 65%;
+}
+
+aside#contacto {
+    float: right;
+    width: 30%;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+article#contacto-columna .titulo {
+    font-size: 30px;
+    color: #146F9E;
+    padding-bottom: 0;
+    margin-top: 50px;
+}
+
+.importante {
+    background-color: #146F9E;
+    color: aliceblue;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+#mapa {
+    height: 400px;
+  }
 
 /* Eliminar estilo de Links */
 a {
@@ -112,7 +145,6 @@ header #logo h1 {
 }
 
 /* Somos */
-
 article#somos-columna {
     float: left;
     max-width: 65%;
@@ -121,15 +153,15 @@ article#somos-columna {
 aside#cuadrito {
     float: right;
     width: 30%;
-    margin-top: 170px;
+    margin-top: 80px;
     padding: 10px;
 }
 
-.titulo {
+article#somos-columna .titulo {
     font-size: 30px;
     color: #146F9E;
     padding-bottom: 0;
-    margin-top: 125px;
+    margin-top: 80px;
 }
 
 .destacado {
@@ -187,7 +219,6 @@ aside#cuadrito {
 }
 
 /* Boxes */
-
 #boxes h2 {
     font-size: 25px;
     margin-bottom: 0px;
@@ -280,6 +311,18 @@ footer p {
     }
 
     aside#cuadrito {
+        float: none;
+        width: 100%;
+        margin-top: 25px;
+        padding: 10px;
+    }
+
+    article#contacto-columna {
+        float: none;
+        max-width: 100%;
+    }
+
+    aside#contacto {
         float: none;
         width: 100%;
         margin-top: 25px;
