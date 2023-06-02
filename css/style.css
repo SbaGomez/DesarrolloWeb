@@ -41,7 +41,7 @@ hr {
     position: fixed;
     bottom: 20px;
     right: 20px;
-  }
+}
 
 /* Eliminar estilo de Links */
 a {
@@ -187,39 +187,33 @@ aside#cuadrito {
 }
 
 /* Boxes */
-#boxes {
-    margin-top: 40px;
-    width: 100%;
-}
-
-#boxes .box {
-    float: left;
-    text-align: center;
-    width: 30%;
-    padding: 15px;
-    margin-left: 35px;
-}
-
-#boxes .box img {
-    width: 150PX;
-    padding-bottom: 40px;
-    padding-top: 20px;
-}
-
-#boxes p {
-    font-size: 15px;
-    padding: 0 40px;
-}
 
 #boxes h2 {
     font-size: 25px;
     margin-bottom: 0px;
-    text-align: left;
     color: #146F9E;
+}
+
+#boxes {
+    margin-top: 50px;
+    width: 100%;
+}
+
+#boxes img {
+    width: 150px;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 #boxes h3 {
     padding-bottom: 20px;
+    text-align: center;
+}
+
+#boxes p {
+    text-align: center;
+    font-size: 15px;
+    padding: 0 40px;
 }
 
 /* Footer */
@@ -240,17 +234,8 @@ footer p {
     /* Asegúrate de que no haya margen inferior */
 }
 
-@media only screen and (max-width: 1310px) {
-    #boxes .box {
-        margin-left: 0;
-    }
-}
 
 @media only screen and (max-width: 768px) {
-
-    #boxes .box {
-        margin-left: 0;
-    }
 
     header #logo h1 {
         margin-left: 0 !important;
@@ -287,13 +272,6 @@ footer p {
     #newsletter .btn_news {
         width: 95%;
 
-    }
-
-    #boxes .box,
-    #boxes h2 {
-        float: none;
-        text-align: center;
-        width: 100%;
     }
 
     article#somos-columna {
