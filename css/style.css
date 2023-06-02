@@ -26,14 +26,6 @@ hr {
     margin: 20px 0;
 }
 
-.tituloBanner {
-    margin-top: 0;
-    line-height: 70px;
-    font-size: 100px;
-    font-weight: lighter;
-    color: rgba(194, 228, 255, 0.41);
-}
-
 .active {
     color: #E67072 !important;
     font-weight: 800;
@@ -43,6 +35,112 @@ hr {
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+/* Eliminar estilo de Links */
+a {
+    color: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: none;
+    text-decoration: none;
+}
+
+a:link {
+    color: none;
+    text-decoration: none;
+}
+
+a:active {
+    color: none;
+    text-decoration: none;
+}
+
+a:visited {
+    color: none;
+    text-decoration: none;
+}
+
+/* Cambios Navbar */
+.BackgroundNavbar {
+    background-color: #31373b;
+}
+
+header {
+    color: #E67072;
+    border-bottom: #E67072 3px solid;
+}
+
+header #logo h1 {
+    font-weight: 400;
+    font-size: 22pt;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 0 !important;
+    margin-left: 50px;
+}
+
+.nombre {
+    font-weight: 800;
+    color: rgb(156, 147, 132);
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: beige;
+}
+
+.navbar-toggler {
+    background-color: #636161 !important;
+    color: rgb(41, 40, 40) !important;
+}
+
+.navbar-toggler:hover {
+    background-color: #7e7d7d !important;
+}
+
+.navbar-nav.ms-auto .nav-item {
+    margin-right: 40px;
+    font-size: 12pt;
+    text-transform: uppercase;
+}
+
+.navbar-nav.ms-auto {
+    padding-right: 150px;
+}
+
+/* banner */
+#banner {
+    color: rgb(194, 228, 255);
+    height: 400px;
+    background-image: url(../img/seccion.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: aliceblue;
+    padding: 150px 40px;
+}
+
+.tituloBanner {
+    margin-top: 0;
+    line-height: 70px;
+    font-size: 100px;
+    font-weight: lighter;
+    color: rgba(194, 228, 255, 0.41);
+}
+
+.tituloBannerHome {
+    color: #e4bd82;
+    font-size: calc(1.800rem + 2vw);
+}
+
+#banner p {
+    font-size: 15pt;
 }
 
 /* Contacto */
@@ -76,74 +174,6 @@ article#contacto-columna .titulo {
     height: 400px;
 }
 
-/* Eliminar estilo de Links */
-a {
-    color: none;
-    text-decoration: none;
-}
-
-a:hover {
-    color: none;
-    text-decoration: none;
-}
-
-a:link {
-    color: none;
-    text-decoration: none;
-}
-
-a:active {
-    color: none;
-    text-decoration: none;
-}
-
-a:visited {
-    color: none;
-    text-decoration: none;
-}
-
-/* Cambios Navbar */
-header {
-    color: #E67072;
-    border-bottom: #E67072 3px solid;
-}
-
-header #logo h1 {
-    font-weight: 400;
-    font-size: 22pt;
-    height: 70px;
-    line-height: 70px;
-    margin-bottom: 0 !important;
-    margin-left: 100px;
-}
-
-.nombre {
-    font-weight: 800;
-    color: rgb(156, 147, 132);
-}
-
-.navbar-nav.ms-auto .nav-item {
-    margin-right: 40px;
-    font-size: 12pt;
-    text-transform: uppercase;
-}
-
-.navbar-nav.ms-auto {
-    padding-right: 150px;
-}
-
-/* banner */
-#banner {
-    color: rgb(194, 228, 255);
-    height: 400px;
-    background-image: url(../img/seccion.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: aliceblue;
-    padding: 150px 40px;
-}
-
 /* Somos */
 article#somos-columna {
     float: left;
@@ -161,7 +191,7 @@ article#somos-columna .titulo {
     font-size: 30px;
     color: #146F9E;
     padding-bottom: 0;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .destacado {
@@ -263,6 +293,14 @@ footer {
 footer p {
     margin-bottom: 0;
     /* Asegúrate de que no haya margen inferior */
+}
+
+@media only screen and (max-width: 1160px) {
+
+    header #logo h1 {
+        margin-left: 0 !important;
+        font-size: 20pt;
+    }
 }
 
 
