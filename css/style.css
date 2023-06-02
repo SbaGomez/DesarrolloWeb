@@ -166,7 +166,7 @@ aside#contacto {
 }
 
 article#contacto-columna .titulo {
-    font-size: 30px;
+    font-size: 40px;
     color: #146F9E;
     padding-bottom: 0;
     margin-top: 50px;
@@ -197,7 +197,7 @@ aside#cuadrito {
 }
 
 article#somos-columna .titulo {
-    font-size: 30px;
+    font-size: 40px;
     color: #146F9E;
     padding-bottom: 0;
     margin-top: 50px;
@@ -259,7 +259,7 @@ article#somos-columna .titulo {
 
 /* Boxes */
 #boxes h2 {
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 0px;
     color: #146F9E;
 }
