@@ -111,13 +111,9 @@ header #logo h1 {
 }
 
 .navbar-nav.ms-auto .nav-item {
-    margin-right: 40px;
+    margin-right: 15px;
     font-size: 12pt;
     text-transform: uppercase;
-}
-
-.navbar-nav.ms-auto {
-    padding-right: 150px;
 }
 
 /* banner */
@@ -181,6 +177,19 @@ article#contacto-columna .titulo {
 
 #mapa {
     height: 400px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    pointer-events: none; /* Permite hacer clic en los campos de entrada sin interactuar con los iconos */
+    color: #afaeae;
 }
 
 /* Somos */
