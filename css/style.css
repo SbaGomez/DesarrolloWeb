@@ -87,10 +87,14 @@ header #logo h1 {
     color: rgb(156, 147, 132);
 }
 
-.nav-link i{
+.nav-link i {
     color: #e4bd82;
     padding-right: 7px;
     font-size: 20px;
+}
+
+.dropdown-menu {
+    width: 30%;
 }
 
 .nav-link {
@@ -98,6 +102,15 @@ header #logo h1 {
 }
 
 .nav-link:hover {
+    color: beige;
+}
+
+.nav-link-dropdown {
+    color: white;
+}
+
+.nav-link-dropdown:hover {
+    background-color: transparent;
     color: beige;
 }
 
@@ -116,6 +129,26 @@ header #logo h1 {
     text-transform: uppercase;
 }
 
+.instagram {
+    color: #833ab4;
+    /* Color primario de Instagram */
+}
+
+.facebook {
+    color: #3b5998;
+    /* Color primario de Facebook */
+}
+
+.whatsapp {
+    color: #25d366;
+    /* Color primario de WhatsApp */
+}
+
+.twitter {
+    color: #1da1f2;
+    /* Color primario de Twitter */
+}
+
 /* banner */
 #banner {
     color: rgb(194, 228, 255);
@@ -126,8 +159,10 @@ header #logo h1 {
     text-align: center;
     color: aliceblue;
     line-height: 400px;
-    display: flex; /* Agregar una propiedad flex */
-    align-items: center; /* Centrar verticalmente */
+    display: flex;
+    /* Agregar una propiedad flex */
+    align-items: center;
+    /* Centrar verticalmente */
 }
 
 .tituloBanner {
@@ -188,7 +223,8 @@ article#contacto-columna .titulo {
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
-    pointer-events: none; /* Permite hacer clic en los campos de entrada sin interactuar con los iconos */
+    pointer-events: none;
+    /* Permite hacer clic en los campos de entrada sin interactuar con los iconos */
     color: #afaeae;
 }
 

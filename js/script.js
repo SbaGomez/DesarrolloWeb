@@ -15,18 +15,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Itera sobre cada enlace y agrega un evento de clic
     enlaces.forEach(function (enlace) {
-        enlace.addEventListener("click", function (e) {
-            e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        // Verifica si el enlace tiene un atributo href
+        if (enlace.hasAttribute("href")) {
 
-            // Funcion para desplazarse hacia la sección correspondiente            
-            const targetSectionId = enlace.getAttribute("href").substring(1);
-            scrollToSection(targetSectionId);
+            if (enlace.getAttribute("href") === "#") {
+                return; // No hacer nada si el href es "#"
+            }
+            enlace.addEventListener("click", function (e) {
+                e.preventDefault(); // Evita el comportamiento predeterminado del enlace
 
-            // Obtiene la URL del enlace
-            var url = this.getAttribute("id") + ".html";
-            // Carga el contenido de la URL en el contenedor
-            cargarContenido(url);
-        });
+                // Funcion para desplazarse hacia la sección correspondiente
+                const targetSectionId = enlace.getAttribute("href").substring(1);
+                scrollToSection(targetSectionId);
+
+                // Obtiene la URL del enlace
+                var url = this.getAttribute("id") + ".html";
+                // Carga el contenido de la URL en el contenedor
+                cargarContenido(url);
+            });
+        }
     });
 
     // Función para desplazarse suavemente hacia una sección
@@ -120,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.title = tituloPagina;
 
                 // Obtener los elementos de navegación
-                var elementosNavegacion = document.querySelectorAll("#inicio, #somos, #ideas, #contacto");
+                var elementosNavegacion = document.querySelectorAll("#inicio, #somos, #ideas, #contacto, #dropdown");
 
                 // Función para activar el elemento de navegación correspondiente
                 function activarElemento(elemento) {

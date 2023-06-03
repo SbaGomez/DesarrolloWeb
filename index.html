@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Web trabajada con bootstrap, html, css, fontawesome y js para la materia Diseño y desarrollo Web">
-    <meta name="keywords" content="uade, diseño, desarrollo, web">
+    <meta name="description" content="Web trabajada con bootstrap, html, css, fontawesome y js para la materia Diseño y desarrollo Web.">
+    <meta name="keywords" content="uade, diseño, desarrollo, web.">
 
     <!-- links -->
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
@@ -17,10 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Vina+Sans&display=swap" />
-
-    <title>Diseño y Desarrollo Web</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Vina+Sans&display=swap" />
 </head>
 
 <body>
@@ -38,6 +35,32 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto text-end">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" id="dropdown" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fas fa-share-alt"></i> Redes
+                            </a>
+                            <ul class="dropdown-menu BackgroundNavbar ms-auto text-end">
+                                <li>
+                                    <a class="dropdown-item nav-link-dropdown" href="#">
+                                        <i class="fab fa-instagram instagram"></i> Instagram</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link-dropdown" href="#">
+                                        <i class="fab fa-facebook facebook"></i> Facebook</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link-dropdown" href="#">
+                                        <i class="fab fa-whatsapp whatsapp"></i> Whatsapp</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item disabled">
+                                        <i class="fab fa-twitter"></i> Twitter</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#newsletter" id="inicio">
                                 <i class="fas fa-home"></i> Home</a>
@@ -93,8 +116,11 @@
     </footer>
     <!-- END FOOTER -->
 
-    <button id="botonScrollArriba" class="btn btn-primary btn-lg floating-button"><i
-            class="fas fa-arrow-up"></i></button>
+    <!-- START SCROLL TO TOP -->
+    <button id="botonScrollArriba" class="btn btn-primary btn-lg floating-button">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- END SCROLL TO TOP -->
 </body>
 
 </html>
