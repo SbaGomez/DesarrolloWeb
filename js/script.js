@@ -73,7 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Función para desplazarse suavemente hacia una sección
     function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
-        section.scrollIntoView({ behavior: "smooth" });
+
+        if (section) {
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
     }
 
     // Función para desplazarse hacia arriba en la página
@@ -167,7 +172,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Función para activar el elemento de navegación correspondiente
                 function activarElemento(elemento) {
-                    elemento.classList.add("active");
+                    if (elemento.id !== "dropdown") {
+                        elemento.classList.add("active");
+                    }
                 }
 
                 // Función para desactivar todos los elementos de navegación
@@ -180,7 +187,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Asignar eventos de clic a los elementos de navegación
                 elementosNavegacion.forEach(function (elemento) {
                     elemento.addEventListener("click", function () {
-                        desactivarElementos();
+                        if (elemento.id !== "dropdown") {
+                            desactivarElementos();
+                        }
                         activarElemento(elemento);
                     });
                 });
