@@ -1,5 +1,10 @@
 // Espera a que el DOM se cargue completamente
 document.addEventListener("DOMContentLoaded", () => {
+
+    //Carga como default el inicio.html
+    cargarContenido("inicio.html");
+    ajustarAlturaContenido();
+
     // Obtiene los enlaces del menú de navegación
     const enlaces = document.querySelectorAll("nav ul li a");
 
@@ -67,6 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("contenido").innerHTML = this.responseText;
+
+                // Ajustar la altura del contenido después de cargar el HTML
                 ajustarAlturaContenido();
 
                 // Variable para titulo de la pagina
@@ -156,15 +163,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Ajusta la altura del contenido según su contenido
     function ajustarAlturaContenido() {
-        var contenido = document.getElementById("contenido");
+        const contenido = document.getElementById("contenido");
         contenido.style.height = "440px"; // Restablece la altura a "auto" para recalcularla correctamente
         contenido.style.height = (contenido.scrollHeight + 100) + "px"; // Establece la altura según el contenido
     }
-
+    
     window.addEventListener("resize", ajustarAlturaContenido);
-
-    //Carga como default el inicio.html
-    cargarContenido("inicio.html");
-
 });
 

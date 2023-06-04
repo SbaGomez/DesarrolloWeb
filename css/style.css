@@ -31,6 +31,13 @@ hr {
     font-weight: 800;
 }
 
+.disabled{
+    color: #696667 !important;
+    font-size: 11pt;
+    font-weight: 800;
+    pointer-events: none;
+}
+
 .floating-button {
     position: fixed;
     bottom: 20px;
@@ -73,6 +80,10 @@ header {
     border-bottom: #E67072 3px solid;
 }
 
+.navbar{
+    border-bottom: #a35354 2px solid;
+}
+
 header #logo h1 {
     font-weight: 400;
     font-size: 22pt;
@@ -87,12 +98,6 @@ header #logo h1 {
     color: rgb(156, 147, 132);
 }
 
-.nav-link i {
-    color: #e4bd82;
-    padding-right: 7px;
-    font-size: 20px;
-}
-
 .dropdown-menu {
     width: 30%;
 }
@@ -103,15 +108,30 @@ header #logo h1 {
 
 .nav-link:hover {
     color: beige;
+    
+}
+
+.nav-link i {
+    color: #e4bd82;
+    padding-right: 7px;
+    font-size: 20px;
 }
 
 .nav-link-dropdown {
     color: white;
+    height: 40px;
+    line-height: 30px;
+    font-size: 11pt;
 }
 
 .nav-link-dropdown:hover {
-    background-color: transparent;
+    background-color: #394044;
     color: beige;
+}
+
+.nav-link-dropdown i {
+    padding-right: 8px;
+    font-size: 15pt;
 }
 
 .navbar-toggler {
@@ -156,6 +176,7 @@ header #logo h1 {
     background-image: url(../img/seccion.jpg);
     background-size: cover;
     background-position: center;
+    margin-top: 80px;
     text-align: center;
     color: aliceblue;
     line-height: 400px;
