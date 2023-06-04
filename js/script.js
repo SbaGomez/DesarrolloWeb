@@ -41,6 +41,35 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Obtener los enlaces del menú
+    const menuLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const menuDropDownLinks = document.querySelectorAll('.dropdown-menu .dropdown-item');
+
+    // Obtener el menú hamburguesa y el menú colapsable
+    const menuToggle = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
+    // Agregar evento click a los enlaces del menú
+    menuLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Verificar si el enlace es el elemento con id "dropdown"
+            if (this.id !== "dropdown") {
+                // Cerrar el menú hamburguesa
+                navbarCollapse.classList.remove('show');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+
+    // Agregar evento click a los enlaces del menú desplegable
+    menuDropDownLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Cerrar el menú hamburguesa
+            navbarCollapse.classList.remove('show');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
     // Función para desplazarse suavemente hacia una sección
     function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
@@ -167,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
         contenido.style.height = "440px"; // Restablece la altura a "auto" para recalcularla correctamente
         contenido.style.height = (contenido.scrollHeight + 100) + "px"; // Establece la altura según el contenido
     }
-    
+
     window.addEventListener("resize", ajustarAlturaContenido);
 });
 
