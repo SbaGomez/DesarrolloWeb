@@ -38,10 +38,26 @@ hr {
     pointer-events: none;
 }
 
+/* Estilo boton Scroll Top */
 .floating-button {
+    border-radius: 10px;
+    border: 0;
+    width: 40px;
+    height: 40px;
     position: fixed;
     bottom: 20px;
     right: 20px;
+    background-color: #E67072;
+    color: black;
+}
+
+.floating-button:hover {
+    background-color: #e6a543;
+    color: black;
+}
+
+.floating-button i {
+    font-size: 25px;
 }
 
 /* Eliminar estilo de Links */
