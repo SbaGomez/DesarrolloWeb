@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const enlaces = document.querySelectorAll("nav ul li a");
 
     //Como se usa la funcion scrollToTop
-    const botonScrollArriba = document.getElementById("botonScrollArriba");
-    botonScrollArriba.addEventListener("click", scrollToTop);
+    const botonScrollTop = document.getElementById("botonScrollTop");
+    botonScrollTop.addEventListener("click", scrollToTop);
 
     // Verificar la posición de desplazamiento al cargar la página
     verificarPosicionDesplazamiento();
@@ -91,12 +91,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Verificar la posición de desplazamiento al desplazar o cargar la página
     function verificarPosicionDesplazamiento() {
-        var botonScrollArriba = document.getElementById("botonScrollArriba");
+        var botonScrollTop = document.getElementById("botonScrollTop");
 
         if (window.pageYOffset > 0) {
-            botonScrollArriba.style.display = "block"; // Mostrar el botón
+            botonScrollTop.style.display = "block"; // Mostrar el botón
         } else {
-            botonScrollArriba.style.display = "none"; // Ocultar el botón
+            botonScrollTop.style.display = "none"; // Ocultar el botón
         }
     }
 
