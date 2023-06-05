@@ -134,11 +134,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     banner.style.height = "200px";                                  //height del banner
                     banner.style.lineHeight = "200px";                              //LineHeight del banner para que este centrado
                     texto.style.display = "none"                                    //Esconder el p del banner en el somos.html
-                    titulo.textContent = "Diseño Web";                              //Cambiar titulo del banner
+                    titulo.textContent = "¿Quienes Somos?";                         //Cambiar titulo del banner
                     newsletter.style.display = "block";                             //Escoder el newsletter en el somos.html
                     titulo.classList.add("tituloBanner");                           //Agregarle el estilo del titulo del banner en el somos.html
                     titulo.classList.remove("tituloBannerHome");
-                    banner.style.backgroundImage = "url('../img/Somos.jpg')";     //Imagen del banner de index.html
+                    banner.style.backgroundImage = "url('../img/Somos.jpg')";       //Imagen del banner de index.html
                     tituloPagina = "Diseño y Desarrollo Web - Somos";               //Cambiar titulo de la pagina
                 }
                 else if (url.includes("ideas.html")) {
