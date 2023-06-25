@@ -118,50 +118,60 @@ document.addEventListener("DOMContentLoaded", () => {
                 const texto = document.getElementById("banner").querySelector("p");
                 const titulo = document.getElementById("banner").querySelector("h1");
                 const newsletter = document.getElementById("newsletter");
+                const video = document.getElementById("video");
 
                 if (url.includes("inicio.html")) {
                     banner.style.height = "400px";                                  //height del banner
                     banner.style.lineHeight = "400px";                              //LineHeight del banner para que este centrado
                     texto.style.display = "block";                                  //Mostrar el p del banner en el index.html
-                    titulo.textContent = "Proporción áurea y fractales";            //Cambiar titulo del banner
+                    titulo.textContent = "Next Fest steam";                         //Cambiar titulo del banner
                     newsletter.style.display = "block";                             //Mostrar el newsletter en el index.html
+                    banner.style.backgroundPosition = "center";
                     titulo.classList.add("tituloBannerHome");                       //Remover estilo del titulo del banner en el index.html
                     titulo.classList.remove("tituloBanner");
-                    banner.style.backgroundImage = "url('../img/Seccion.jpg')";     //Imagen del banner de index.html
+                    //banner.style.backgroundImage = "url('../img/Seccion.jpg')";     //Imagen del banner de index.html
                     tituloPagina = "Diseño y Desarrollo Web - Home";                //Cambiar titulo de la pagina
+                    video.style.display = "block";
                 }
                 else if (url.includes("somos.html")) {
                     banner.style.height = "200px";                                  //height del banner
                     banner.style.lineHeight = "200px";                              //LineHeight del banner para que este centrado
                     texto.style.display = "none"                                    //Esconder el p del banner en el somos.html
                     titulo.textContent = "¿Quienes Somos?";                         //Cambiar titulo del banner
+                    banner.style.backgroundPosition = "center";
                     newsletter.style.display = "block";                             //Escoder el newsletter en el somos.html
                     titulo.classList.add("tituloBanner");                           //Agregarle el estilo del titulo del banner en el somos.html
                     titulo.classList.remove("tituloBannerHome");
-                    banner.style.backgroundImage = "url('../img/Somos.jpg')";       //Imagen del banner de index.html
+                    banner.style.backgroundImage = "url('img/somos.webp')";       //Imagen del banner de index.html
                     tituloPagina = "Diseño y Desarrollo Web - Somos";               //Cambiar titulo de la pagina
+                    video.style.display = "none";
                 }
                 else if (url.includes("ideas.html")) {
-                    banner.style.height = "200px";
-                    banner.style.lineHeight = "200px";
+                    banner.style.height = "500px";
+                    banner.style.lineHeight = "500px";
+                    banner.style.backgroundPosition = "top";
                     texto.style.display = "none"
-                    titulo.textContent = "Ideas";
+                    titulo.textContent = "Biblioteca de Juegos";
+                    titulo.style.fontSize = "65pt"
                     titulo.classList.add("tituloBanner");
                     titulo.classList.remove("tituloBannerHome");
                     newsletter.style.display = "block";
-                    banner.style.backgroundImage = "url('../img/Ideas.jpg')";
+                    banner.style.backgroundImage = "url('img/juegos.webp')";
                     tituloPagina = "Diseño y Desarrollo Web - Ideas";
+                    video.style.display = "none";
                 }
                 else if (url.includes("contacto.html")) {
                     banner.style.height = "200px";
                     banner.style.lineHeight = "200px";
+                    banner.style.backgroundPosition = "center";
                     texto.style.display = "none"
                     titulo.textContent = "Contacto";
                     titulo.classList.add("tituloBanner");
                     titulo.classList.remove("tituloBannerHome");
                     newsletter.style.display = "block";
-                    banner.style.backgroundImage = "url('../img/Contacto.jpg')";
+                    banner.style.backgroundImage = "url('img/contacto.webp')";
                     tituloPagina = "Diseño y Desarrollo Web - Contacto";
+                    video.style.display = "none";
                 }
 
                 // Le asigna el titulo de la pagina que corresponda
@@ -202,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ajusta la altura del contenido según su contenido
     function ajustarAlturaContenido() {
         const contenido = document.getElementById("contenido");
-        contenido.style.height = "440px"; // Restablece la altura a "auto" para recalcularla correctamente
+        contenido.style.height = "600px"; // Restablece la altura a "auto" para recalcularla correctamente
         contenido.style.height = (contenido.scrollHeight + 100) + "px"; // Establece la altura según el contenido
     }
 
