@@ -390,7 +390,7 @@ h2 {
     color: #146F9E;
 }
 
-h4{
+h4 {
     font-size: 22pt;
 }
 
@@ -469,21 +469,44 @@ h4{
 }
 
 /* Footer */
-footer {
-    height: 70px;
-    line-height: 70px;
-    background-color: #171A21;
-    text-align: center;
-    color: white;
+
+#footer {
+    padding: 30px;
     position: absolute;
+    width: 100%;
     bottom: 0;
     left: 0;
-    width: 100%;
+    background-color: rgb(29, 31, 33);
+    color: rgba(232, 230, 227, 0.4);
 }
 
-footer p {
-    margin-bottom: 0;
-    /* Asegúrate de que no haya margen inferior */
+.footer-bottom{
+    padding-top: 30px;
+    font-size: 14pt;
+    text-align: center;
+    color:aliceblue;
+}
+
+.btn_footer {
+    height: 40px;
+    line-height: 40px;
+    background-color: #B14143;
+    border: none;
+    padding: 10.5px 15px;
+    color: rgb(255, 255, 255);;
+    border-radius: 0 5px 5px 0;
+}
+
+#footer h3{
+    font-size: 14pt;
+    text-transform: uppercase;
+    color: #146F9E;
+    font-weight: 600;
+}
+
+#footer ul{
+    padding-left: 0;
+    list-style-type: none;
 }
 
 @media only screen and (max-width: 1160px) {

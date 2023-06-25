@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ajustarAlturaContenido();
 
     // Obtiene los enlaces del menú de navegación
-    const enlaces = document.querySelectorAll("nav ul li a");
+    const enlaces = document.querySelectorAll("ul li a");
 
     //Como se usa la funcion scrollToTop
     const botonScrollTop = document.getElementById("botonScrollTop");
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     titulo.classList.add("tituloBannerHome");                       //Remover estilo del titulo del banner en el index.html
                     titulo.classList.remove("tituloBanner");
                     //banner.style.backgroundImage = "url('../img/Seccion.jpg')";     //Imagen del banner de index.html
-                    tituloPagina = "Diseño y Desarrollo Web - Home";                //Cambiar titulo de la pagina
+                    tituloPagina = "Steam fan Web- Home";                //Cambiar titulo de la pagina
                     video.style.display = "block";
                 }
                 else if (url.includes("somos.html")) {
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     titulo.classList.add("tituloBanner");                           //Agregarle el estilo del titulo del banner en el somos.html
                     titulo.classList.remove("tituloBannerHome");
                     banner.style.backgroundImage = "url('img/somos.webp')";       //Imagen del banner de index.html
-                    tituloPagina = "Diseño y Desarrollo Web - Somos";               //Cambiar titulo de la pagina
+                    tituloPagina = "Steam fan Web- Somos";               //Cambiar titulo de la pagina
                     video.style.display = "none";
                 }
                 else if (url.includes("ideas.html")) {
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     titulo.classList.remove("tituloBannerHome");
                     newsletter.style.display = "block";
                     banner.style.backgroundImage = "url('img/juegos.webp')";
-                    tituloPagina = "Diseño y Desarrollo Web - Ideas";
+                    tituloPagina = "Steam fan Web- Juegos";
                     video.style.display = "none";
                 }
                 else if (url.includes("contacto.html")) {
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     titulo.classList.remove("tituloBannerHome");
                     newsletter.style.display = "block";
                     banner.style.backgroundImage = "url('img/contacto.webp')";
-                    tituloPagina = "Diseño y Desarrollo Web - Contacto";
+                    tituloPagina = "Steam fan Web- Contacto";
                     video.style.display = "none";
                 }
 
@@ -213,8 +213,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ajusta la altura del contenido según su contenido
     function ajustarAlturaContenido() {
         const contenido = document.getElementById("contenido");
-        contenido.style.height = "600px"; // Restablece la altura a "auto" para recalcularla correctamente
-        contenido.style.height = (contenido.scrollHeight + 100) + "px"; // Establece la altura según el contenido
+        contenido.style.height = "500px"; // Restablece la altura a "auto" para recalcularla correctamente
+        contenido.style.height = (contenido.scrollHeight + 540) + "px"; // Establece la altura según el contenido
     }
 
     window.addEventListener("resize", ajustarAlturaContenido);
