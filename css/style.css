@@ -36,6 +36,79 @@ h4 {
     font-weight: 800;
 }
 
+.colorContainer {
+    display: flex;
+    align-items: center;
+}
+
+.coloresUsados{
+    margin-right: 10px;
+}
+
+.colorAzulOscuro {
+    background-color: #146F9E;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.colorAzul {
+    background-color: #1A9FFF;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.colorRojo {
+    background-color: #B14143;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.colorCeleste {
+    background-color: #91C2E5;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.colorDorado {
+    background-color: #E4BD82;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.colorNaranja {
+    background-color: #E6A543;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.colorGris {
+    background-color: #31373B;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.colorGrisOscuro {
+    background-color: #1D1F21;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border: 1px solid #31373B;
+}
+
+.colorBeige {
+    background-color: #E9E4DD;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
 .disabled {
     color: #696667 !important;
     font-size: 11pt;
@@ -45,8 +118,8 @@ h4 {
 
 #logosteam {
     padding: 20px;
-    height: 100px;
-    margin-left: 50px;
+    height: 85px;
+    margin-left: 20px;
 }
 
 /* Estilo boton Scroll Top */
@@ -245,7 +318,7 @@ header #logo h1 {
     margin-top: 0;
     font-size: calc(1.800rem + 2vw);
     font-weight: 550;
-    color: rgba(166, 212, 250, 0.6);
+    color: rgba(166, 212, 250, 0.7);
 }
 
 .tituloBannerHome {
@@ -262,7 +335,7 @@ header #logo h1 {
 }
 
 /* Contacto */
-#contacto h2{
+#contacto h2 {
     font-size: 35px;
     margin-bottom: 20px;
     color: white;
@@ -339,7 +412,7 @@ article#somos-columna .titulo {
     margin-top: 0px;
 }
 
-#cuadrito h2{
+#cuadrito h2 {
     font-size: 35px;
     margin-bottom: 20px;
     color: white;
@@ -481,25 +554,24 @@ h4 {
 }
 
 /* Footer */
-
-#footer {
+.footer {
     padding: 30px;
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
     background-color: rgb(29, 31, 33);
-    color: rgba(232, 230, 227, 0.4);
+    color: #ccc;
 }
 
-.footer-bottom{
+.footer-bottom {
     padding-top: 30px;
     font-size: 14pt;
     text-align: center;
-    color:aliceblue;
+    color: aliceblue;
 }
 
-.footer-social i{
+.footer-social i {
     margin-left: 20px;
 }
 
@@ -509,18 +581,19 @@ h4 {
     background-color: #B14143;
     border: none;
     padding: 10.5px 15px;
-    color: rgb(255, 255, 255);;
+    color: rgb(255, 255, 255);
     border-radius: 0 5px 5px 0;
 }
 
-#footer h3{
+.footer h3 {
     font-size: 14pt;
     text-transform: uppercase;
-    color: #146F9E;
+    color: #1A9FFF;
     font-weight: 600;
+    padding-top: 15px;
 }
 
-#footer ul{
+.footer ul {
     padding-left: 0;
     list-style-type: none;
 }
@@ -534,6 +607,8 @@ h4 {
 
     #logosteam {
         margin-left: 0 !important;
+        height: 85px;
+        width: 219px;
     }
 }
 
@@ -543,6 +618,12 @@ h4 {
     header #logo h1 {
         margin-left: 0 !important;
         font-size: 20pt;
+    }
+
+    #logosteam {
+        margin-left: 0 !important;
+        height: 85px;
+        width: 219px;
     }
 
     .nombre {

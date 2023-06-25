@@ -34,7 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 scrollToSection(targetSectionId);
 
                 // Obtiene la URL del enlace
-                var url = this.getAttribute("id") + ".html";
+                var id = this.getAttribute("id");
+                if (id.endsWith("Footer")) {
+                    id = id.slice(0, -6);
+                }
+                var url = id + ".html";
                 // Carga el contenido de la URL en el contenedor
                 cargarContenido(url);
             });
@@ -131,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     titulo.classList.add("tituloBannerHome");                       //Remover estilo del titulo del banner en el index.html
                     titulo.classList.remove("tituloBanner");
                     //banner.style.backgroundImage = "url('../img/Seccion.jpg')";     //Imagen del banner de index.html
-                    tituloPagina = "Steam fan Web- Home";                //Cambiar titulo de la pagina
+                    tituloPagina = "Steam fan Web - Home";                //Cambiar titulo de la pagina
                     video.style.display = "block";
                 }
                 else if (url.includes("somos.html")) {
@@ -144,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     titulo.classList.add("tituloBanner");                           //Agregarle el estilo del titulo del banner en el somos.html
                     titulo.classList.remove("tituloBannerHome");
                     banner.style.backgroundImage = "url('img/somos.webp')";       //Imagen del banner de index.html
-                    tituloPagina = "Steam fan Web- Somos";               //Cambiar titulo de la pagina
+                    tituloPagina = "Steam fan Web - Somos";               //Cambiar titulo de la pagina
                     video.style.display = "none";
                 }
                 else if (url.includes("juegos.html")) {
@@ -158,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     titulo.classList.remove("tituloBannerHome");
                     newsletter.style.display = "block";
                     banner.style.backgroundImage = "url('img/juegos.webp')";
-                    tituloPagina = "Steam fan Web- Juegos";
+                    tituloPagina = "Steam fan Web - Juegos";
                     video.style.display = "none";
                 }
                 else if (url.includes("contacto.html")) {
@@ -171,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     titulo.classList.remove("tituloBannerHome");
                     newsletter.style.display = "block";
                     banner.style.backgroundImage = "url('img/contacto.webp')";
-                    tituloPagina = "Steam fan Web- Contacto";
+                    tituloPagina = "Steam fan Web - Contacto";
                     video.style.display = "none";
                 }
 
@@ -179,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.title = tituloPagina;
 
                 // Obtener los elementos de navegación
-                var elementosNavegacion = document.querySelectorAll("#inicio, #somos, #juegos, #contacto, #dropdown");
+                var elementosNavegacion = document.querySelectorAll("#inicio, #somos, #juegos, #contacto, #inicioFooter, #somosFooter, #contactoFooter, #juegosFooter, #dropdown");
 
                 // Función para activar el elemento de navegación correspondiente
                 function activarElemento(elemento) {
@@ -214,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function ajustarAlturaContenido() {
         const contenido = document.getElementById("contenido");
         contenido.style.height = "500px"; // Restablece la altura a "auto" para recalcularla correctamente
-        contenido.style.height = (contenido.scrollHeight + 600) + "px"; // Establece la altura según el contenido
+        contenido.style.height = (contenido.scrollHeight + 615) + "px"; // Establece la altura según el contenido
     }
 
     window.addEventListener("resize", ajustarAlturaContenido);
