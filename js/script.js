@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     tituloPagina = "Steam fan Web- Somos";               //Cambiar titulo de la pagina
                     video.style.display = "none";
                 }
-                else if (url.includes("ideas.html")) {
+                else if (url.includes("juegos.html")) {
                     banner.style.height = "350px";
                     banner.style.lineHeight = "350px";
                     banner.style.backgroundPosition = "top";
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.title = tituloPagina;
 
                 // Obtener los elementos de navegación
-                var elementosNavegacion = document.querySelectorAll("#inicio, #somos, #ideas, #contacto, #dropdown");
+                var elementosNavegacion = document.querySelectorAll("#inicio, #somos, #juegos, #contacto, #dropdown");
 
                 // Función para activar el elemento de navegación correspondiente
                 function activarElemento(elemento) {
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function ajustarAlturaContenido() {
         const contenido = document.getElementById("contenido");
         contenido.style.height = "500px"; // Restablece la altura a "auto" para recalcularla correctamente
-        contenido.style.height = (contenido.scrollHeight + 540) + "px"; // Establece la altura según el contenido
+        contenido.style.height = (contenido.scrollHeight + 600) + "px"; // Establece la altura según el contenido
     }
 
     window.addEventListener("resize", ajustarAlturaContenido);
