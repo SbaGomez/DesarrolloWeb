@@ -32,7 +32,7 @@ h4 {
 }
 
 .active {
-    color: #E67072 !important;
+    color: #1A9FFF !important;
     font-weight: 800;
 }
 
@@ -139,7 +139,7 @@ header #logo h1 {
 }
 
 .nav-link i {
-    color: #1A9FFF;
+    color: #91c2e5;
     padding-right: 7px;
     font-size: 20px;
 }
@@ -243,9 +243,7 @@ header #logo h1 {
 .tituloBanner {
     text-transform: uppercase;
     margin-top: 0;
-    height: 100px;
-    line-height: 100px;
-    font-size: 70px;
+    font-size: calc(1.800rem + 2vw);
     font-weight: 550;
     color: rgba(166, 212, 250, 0.6);
 }
@@ -346,7 +344,7 @@ article#somos-columna .titulo {
 
 #newsletter h2 {
     float: left;
-    font-size: 22pt;
+    font-size: 18pt;
     color: white;
     margin-top: 5px;
 }
@@ -390,6 +388,10 @@ h2 {
     margin-top: 20px;
     margin-bottom: 0px;
     color: #146F9E;
+}
+
+h4{
+    font-size: 22pt;
 }
 
 .juegos img {

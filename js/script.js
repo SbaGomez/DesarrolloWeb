@@ -125,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     banner.style.lineHeight = "400px";                              //LineHeight del banner para que este centrado
                     texto.style.display = "block";                                  //Mostrar el p del banner en el index.html
                     titulo.textContent = "Next Fest steam";                         //Cambiar titulo del banner
+                    texto.textContent = "Siete dias, cientos de demos y un monton de retransmisiones en directo.";
                     newsletter.style.display = "block";                             //Mostrar el newsletter en el index.html
                     banner.style.backgroundPosition = "center";
                     titulo.classList.add("tituloBannerHome");                       //Remover estilo del titulo del banner en el index.html
@@ -147,12 +148,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     video.style.display = "none";
                 }
                 else if (url.includes("ideas.html")) {
-                    banner.style.height = "500px";
-                    banner.style.lineHeight = "500px";
+                    banner.style.height = "350px";
+                    banner.style.lineHeight = "350px";
                     banner.style.backgroundPosition = "top";
-                    texto.style.display = "none"
+                    texto.style.display = "block"
                     titulo.textContent = "Biblioteca de Juegos";
-                    titulo.style.fontSize = "65pt"
+                    texto.textContent = "Lista de los juegos mas importantes de steam 2023";
                     titulo.classList.add("tituloBanner");
                     titulo.classList.remove("tituloBannerHome");
                     newsletter.style.display = "block";
