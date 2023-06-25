@@ -262,6 +262,12 @@ header #logo h1 {
 }
 
 /* Contacto */
+#contacto h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+}
+
 article#contacto-columna {
     float: left;
     max-width: 65%;
@@ -331,6 +337,12 @@ article#somos-columna .titulo {
     color: aliceblue;
     padding: 15px;
     margin-top: 0px;
+}
+
+#cuadrito h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
 }
 
 /* newsletter */
