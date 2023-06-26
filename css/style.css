@@ -492,7 +492,7 @@ article#somos-columna .titulo {
 }
 
 /* Juegos */
-h2 {
+#juegos h2 {
     font-size: 35px;
     margin-top: 20px;
     margin-bottom: 0px;
