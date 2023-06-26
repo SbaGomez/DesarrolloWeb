@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Carga como default el inicio.html
     cargarContenido("inicio.html");
-    //ajustarAlturaContenido();
+    //Cargar como default el footer.html
+    cargarFooter("footer.html");
 
     // Obtiene los enlaces del menú de navegación
     const enlaces = document.querySelectorAll("ul li a");
@@ -104,15 +105,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    //Footer
+    function cargarFooter(url) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("footer").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+
     // Función para cargar el contenido de una URL en el contenedor
     function cargarContenido(url) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("contenido").innerHTML = this.responseText;
-
-                // Ajustar la altura del contenido después de cargar el HTML
-                //ajustarAlturaContenido();
 
                 // Variable para titulo de la pagina
                 var tituloPagina = "";
@@ -213,14 +223,5 @@ document.addEventListener("DOMContentLoaded", () => {
         xhttp.open("GET", url, true);
         xhttp.send();
     }
-
-    // Ajusta la altura del contenido según su contenido
-    /* function ajustarAlturaContenido() {
-        const contenido = document.getElementById("contenido");
-        contenido.style.height = "350px"; // Restablece la altura a "auto" para recalcularla correctamente
-        contenido.style.height = (contenido.scrollHeight + 675) + "px"; // Establece la altura según el contenido
-    }
-
-    window.addEventListener("resize", ajustarAlturaContenido); */
 });
 

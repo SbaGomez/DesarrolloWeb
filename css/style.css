@@ -254,8 +254,20 @@ header #logo h1 {
     /* Color primario de Instagram */
 }
 
+.instagramFooter {
+    color: #833ab4;
+    font-size: 24px;
+    /* Color primario de Instagram */
+}
+
 .facebook {
     color: #3b5998;
+    /* Color primario de Facebook */
+}
+
+.facebookFooter {
+    color: #3b5998;
+    font-size: 24px;
     /* Color primario de Facebook */
 }
 
@@ -264,8 +276,20 @@ header #logo h1 {
     /* Color primario de WhatsApp */
 }
 
+.whatsappFooter {
+    color: #25d366;
+    font-size: 24px;
+    /* Color primario de WhatsApp */
+}
+
 .twitter {
     color: #1da1f2;
+    /* Color primario de Twitter */
+}
+
+.twitterFooter {
+    color: #1da1f2;
+    font-size: 24px;
     /* Color primario de Twitter */
 }
 
@@ -589,10 +613,23 @@ h4 {
 .footer h3 {
     font-size: 14pt;
     text-transform: uppercase;
-    color: #1A9FFF;
+    color: aliceblue;
     font-weight: 600;
     padding-top: 15px;
+    position: relative;
+    margin-bottom: 20px;
 }
+
+.footer h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #1A9FFF;
+    height: 3px;
+    box-sizing: border-box;
+    width: 65px;
+  }
 
 .footer ul {
     padding-left: 0;
