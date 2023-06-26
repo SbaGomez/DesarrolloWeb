@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //Carga como default el inicio.html
     cargarContenido("inicio.html");
-    ajustarAlturaContenido();
+    //ajustarAlturaContenido();
 
     // Obtiene los enlaces del menú de navegación
     const enlaces = document.querySelectorAll("ul li a");
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById("contenido").innerHTML = this.responseText;
 
                 // Ajustar la altura del contenido después de cargar el HTML
-                ajustarAlturaContenido();
+                //ajustarAlturaContenido();
 
                 // Variable para titulo de la pagina
                 var tituloPagina = "";
@@ -131,25 +131,25 @@ document.addEventListener("DOMContentLoaded", () => {
                     titulo.textContent = "Next Fest steam";                         //Cambiar titulo del banner
                     texto.textContent = "Siete dias, cientos de demos y un monton de retransmisiones en directo.";
                     newsletter.style.display = "block";                             //Mostrar el newsletter en el index.html
-                    banner.style.backgroundPosition = "center";
+                    banner.style.backgroundPosition = "center";                     //Centrar banner image
                     titulo.classList.add("tituloBannerHome");                       //Remover estilo del titulo del banner en el index.html
-                    titulo.classList.remove("tituloBanner");
+                    titulo.classList.remove("tituloBanner");                        //Remover titulo banner style de otras secciones
                     //banner.style.backgroundImage = "url('../img/Seccion.jpg')";     //Imagen del banner de index.html
-                    tituloPagina = "Steam fan Web - Home";                //Cambiar titulo de la pagina
-                    video.style.display = "block";
+                    tituloPagina = "Steam fan Web - Home";                          //Cambiar titulo de la pagina
+                    video.style.display = "block";                                  //Mostrar video de banner
                 }
                 else if (url.includes("somos.html")) {
                     banner.style.height = "200px";                                  //height del banner
                     banner.style.lineHeight = "200px";                              //LineHeight del banner para que este centrado
                     texto.style.display = "none"                                    //Esconder el p del banner en el somos.html
                     titulo.textContent = "¿Quienes Somos?";                         //Cambiar titulo del banner
-                    banner.style.backgroundPosition = "center";
+                    banner.style.backgroundPosition = "center";                     //Centrar banner image
                     newsletter.style.display = "block";                             //Escoder el newsletter en el somos.html
                     titulo.classList.add("tituloBanner");                           //Agregarle el estilo del titulo del banner en el somos.html
-                    titulo.classList.remove("tituloBannerHome");
-                    banner.style.backgroundImage = "url('img/somos.webp')";       //Imagen del banner de index.html
-                    tituloPagina = "Steam fan Web - Somos";               //Cambiar titulo de la pagina
-                    video.style.display = "none";
+                    titulo.classList.remove("tituloBannerHome");                    //remover estilo del titulo de inicio
+                    banner.style.backgroundImage = "url('img/somos.webp')";         //Imagen del banner de index.html
+                    tituloPagina = "Steam fan Web - Somos";                         //Cambiar titulo de la pagina
+                    video.style.display = "none";                                   //Ocultar video de banner
                 }
                 else if (url.includes("juegos.html")) {
                     banner.style.height = "350px";
@@ -215,12 +215,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Ajusta la altura del contenido según su contenido
-    function ajustarAlturaContenido() {
+    /* function ajustarAlturaContenido() {
         const contenido = document.getElementById("contenido");
         contenido.style.height = "350px"; // Restablece la altura a "auto" para recalcularla correctamente
         contenido.style.height = (contenido.scrollHeight + 675) + "px"; // Establece la altura según el contenido
     }
 
-    window.addEventListener("resize", ajustarAlturaContenido);
+    window.addEventListener("resize", ajustarAlturaContenido); */
 });
 

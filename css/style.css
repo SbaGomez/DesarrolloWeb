@@ -556,7 +556,8 @@ h4 {
 /* Footer */
 .footer {
     padding: 30px;
-    position: absolute;
+    margin-top: 20px;
+    /* position: absolute; */
     width: 100%;
     bottom: 0;
     left: 0;
@@ -596,6 +597,14 @@ h4 {
 .footer ul {
     padding-left: 0;
     list-style-type: none;
+}
+
+.footer li {
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    padding-top: 20px;
 }
 
 @media only screen and (max-width: 1160px) {
