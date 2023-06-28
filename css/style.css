@@ -507,21 +507,6 @@ article#somos-columna .titulo {
 }
 
 /* Juegos */
-#juegos h2 {
-    font-size: 35px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    color: #146F9E;
-}
-
-h4 {
-    font-size: 22pt;
-}
-
-.juegos img {
-    width: 267px;
-}
-
 .juegos-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
@@ -540,11 +525,30 @@ h4 {
     align-items: center;
 }
 
+.juegos:hover {
+    background-color: #272a33;
+}
+
 .juegos .imagen {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
+}
+
+.juegos img {
+    width: 267px;
+}
+
+#juegos h2 {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #146F9E;
+}
+
+#juegos h4 {
+    font-size: 22pt;
 }
 
 .juegos .textos {
