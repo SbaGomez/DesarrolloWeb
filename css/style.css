@@ -581,11 +581,18 @@ h4 {
     height: 400px;
     padding-bottom: 40px;
     padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+#boxes img:hover {
+    transform: scale(1.1);
 }
 
 #boxes h3 {
     padding-bottom: 20px;
+    font-weight: 500;
     text-align: center;
+    font-size: 26pt;
 }
 
 #boxes p {
