@@ -228,6 +228,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 function activarElemento(elemento) {
                     if (elemento.id !== "dropdown") {
                         elemento.classList.add("active");
+                
+                        // Obtener el ID del elemento actual
+                        var elementoId = elemento.id;
+                
+                        // Agregar "active" al elemento de navegación correspondiente en el footer
+                        var elementoFooter = document.getElementById(elementoId + "Footer");
+                        if (elementoFooter) {
+                            elementoFooter.classList.add("active");
+                        }
+                
+                        // Si el elemento activado es del footer, agregar "active" al elemento correspondiente del menú principal
+                        if (elemento.id.endsWith("Footer")) {
+                            var elementoMenu = document.getElementById(elementoId.slice(0, -6));
+                            if (elementoMenu) {
+                                elementoMenu.classList.add("active");
+                            }
+                        }
                     }
                 }
 
@@ -235,6 +252,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 function desactivarElementos() {
                     elementosNavegacion.forEach(function (elemento) {
                         elemento.classList.remove("active");
+                        
+                        // Desactivar también el elemento correspondiente en el footer
+                        var elementoId = elemento.id;
+                        var elementoFooter = document.getElementById(elementoId + "Footer");
+                        if (elementoFooter) {
+                            elementoFooter.classList.remove("active");
+                            
+                            // Si el elemento desactivado es del footer, desactivar también el elemento correspondiente del menú principal
+                            var elementoMenu = document.getElementById(elementoId.slice(0, -6));
+                            if (elementoMenu) {
+                                elementoMenu.classList.remove("active");
+                            }
+                        }
                     });
                 }
 
