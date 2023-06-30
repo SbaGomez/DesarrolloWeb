@@ -117,6 +117,35 @@ document.addEventListener("DOMContentLoaded", () => {
         xhttp.send();
     }
 
+    //Funcion footer para cargar el contenido de la url de los liks en el contenedor
+    function cargarFooter(url) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("footer").innerHTML = this.responseText;
+
+                // Asignar eventos de clic a los enlaces del menú del footer
+                var enlacesFooter = document.querySelectorAll("#footer ul li a");
+
+                enlacesFooter.forEach(function (enlace) {
+                    if (enlace.hasAttribute("href")) {
+                        enlace.addEventListener("click", function (e) {
+                            e.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+
+                            // Obtener la URL del enlace
+                            var url = this.getAttribute("href");
+
+                            // Cargar el contenido de la URL en el contenedor
+                            cargarContenido(url);
+                        });
+                    }
+                });
+            }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+    }
+
     // Función para cargar el contenido de una URL en el contenedor
     function cargarContenido(url) {
         var xhttp = new XMLHttpRequest();
